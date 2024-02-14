@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceDetection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #969696;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .media {
+            flex-basis: 20%; 
+            margin-left: 150px;
+            background-color: #ffffff; /* Background color for image container */
+            padding: 20px; /* Add padding for spacing */
+            border-radius: 8px; /* Add rounded corners */
+        }
+        .media1 {
+            flex-basis: 20%; 
+            margin-right: 150px;
+            background-color: #ffffff; /* Background color for video container */
+            padding: 20px; /* Add padding for spacing */
+            border-radius: 8px; /* Add rounded corners */
+        }
+        .snack-container {
+            width: 45%; 
+            margin: 0 auto; 
+            background-color: #ffffff; /* Background color for Snack player container */
+            padding: 20px; /* Add padding for spacing */
+            border-radius: 8px; /* Add rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Image -->
+        <div class="media">
+            <p>Image</p>
+            <img src="imgw2/mi.png" alt="Description of your image" width="auto" height="300">
+        </div>
+        
+        <!-- Video -->
+        <div class="media1">
+            <p>video</p>
+            <video width="auto" height="300" controls>
+                <source src="imgw2/vedio.mov" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Snack Player -->
+    <div class="snack-container" style="overflow:hidden;border:1px solid var(--color-border);border-radius:4px;height:505px;">
+        <div data-snack-id="@chotika14/work5" data-snack-platform="web" data-snack-preview="true" data-snack-theme="light" style="height:100%;"></div>
+    </div>
+    <script async src="https://snack.expo.dev/embed.js"></script>
+</body>
+</html>
